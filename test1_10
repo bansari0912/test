@@ -5,4 +5,4 @@ def integer (string):
     
     return re.match(regex, string) is not None
 print(integer ('126l')) 
-print(integer('invalid-email'))     
+     
