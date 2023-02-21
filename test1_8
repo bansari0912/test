@@ -1,0 +1,7 @@
+import re
+
+def email(string):
+    regex = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    
+    return re.match(regex, string) is not None
+print(email('johndoe@company.com'))
