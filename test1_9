@@ -1,0 +1,7 @@
+import re
+
+def float(string):
+    regex = r'^[+-]?(?:(?:\d+.?\d*)|(?:.\d+))(?:[eE][+-]?\d+)?[fFIL]?$'
+    
+    return re.match(regex, string) is not None
+print(float('-2.5e-3F')) 
